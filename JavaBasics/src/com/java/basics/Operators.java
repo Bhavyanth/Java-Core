@@ -5,14 +5,14 @@ public class Operators {
 	public static void main(String args[]) {
 		
 		// UNARY OPERATORS
-//		int x = 10; // x -> 10
-//		// x+1 -> 11 
-//		// -> x
-//		//   x = x +1
-//		//   10 = 10 + 1; -> x++
-//		//   x = 11;
-//		//   ++x
-//		//   11 = 11 + 1;
+		int x = 10; // x -> 10
+		// x+1 -> 11 
+		// -> x
+		//   x = x +1
+		//   10 = 10 + 1; -> x++
+		//   x = 11;
+		//   ++x
+		//   11 = 11 + 1;
 //		System.out.println(x++);// Current x value is 10 but it is incremented
 //		// x -> 11 + 1 = 12
 //		System.out.println(++x);// Current x value is 11 and now incremented to 1
@@ -110,14 +110,14 @@ public class Operators {
 		 * It is used to assign the value on its right to the operand on its left.
 		 */
 //		
-//		int a=10;  
-//		int b=20;  
-//		//a+=4; // ~ to a = a+4;
-//		
-//		a+=4;//a=a+4 (a=10+4) 
-//		b-=4;//b=b-4 (b=20-4)  
-//		System.out.println(a);  
-//		System.out.println(b); 
+		int a=10;  
+		int b=20;  
+		//a+=4; // ~ to a = a+4;
+		
+		a+=4;//a=a+4 (a=10+4) 
+		b-=4;//b=b-4 (b=20-4)  
+		System.out.println(a);  
+		System.out.println(b); 
 		
 		
 	}
