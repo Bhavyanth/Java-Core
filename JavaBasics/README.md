@@ -15,6 +15,6 @@
 
 ## Clone and Build
 - Clone the source code using the below command
-```git clone https://github.com/Bhavyanth/Java-Core.git```
+```git clone https://github.com/Bhavyanth/core-java.git```
 
 Setup SDK if prompted (Use installed JDK)
