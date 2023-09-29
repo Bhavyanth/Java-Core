@@ -5,7 +5,7 @@ public class MainPrivate {
 		
 		Private private1 = new Private();
 		
-		private1.msg();
+		//private1.msg();
 		
 //		Private obj = new Private();
 //		System.out.println(obj.data);// Compile Time Error
