@@ -1,17 +1,17 @@
-package com.java.accessModifies;
+package com.accessModifies;
 
-import com.java.access.ProtectedEx;
+//import com.access.ProtectedEx;
 
-public class ProtectedMain extends ProtectedEx{
+public class ProtectedMain {
 	/*
-	 * The protected com.java.access modifier is accessible within package and outside the package
+	 * The protected com.access modifier is accessible within package and outside the package
 	 * but through inheritance only - IS A relationship
 	 * 
 	 * It provides more accessibility than the default modifer.
 	 */
 	public static void main(String[] args) {
 		ProtectedMain p = new ProtectedMain();
-		p.msg();
+//		p.msg();
 	}
 	
 	

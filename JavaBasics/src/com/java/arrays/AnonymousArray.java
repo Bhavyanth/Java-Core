@@ -11,6 +11,8 @@ public class AnonymousArray {
 
 	public static void main(String args[]) {
 		printArray(new int[] { 10, 22, 44, 66 });// passing anonymous array to method
+
+		//  methodName(new arr[]{1,2,3,67});
 		
 		/*
 		 * The method printArray(int[]) in the type AnonymousArray is not applicable for the arguments (Class<int[]>)

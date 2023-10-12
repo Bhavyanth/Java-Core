@@ -1,6 +1,14 @@
 package com.java.exceptions;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Scanner;
+
+import java.util.Objects;
 
 public class Finally {
 	/*
@@ -8,13 +16,18 @@ public class Finally {
 	 */
 	
 	public static void main(String args[]) {
+		Path path1 = Paths.get("C:\\Bhavyanth\\Source Code\\phoenix-graphic\\server\\index.js");
+		Path path2 = Paths.get("");
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter string");
-		String in = scanner.next();
-		System.out.println("String entered is "+in);
-		scanner = null;
+		String input = scanner.next();
+		System.out.println("String entered is "+input);
+		BufferedReader in;
+		BufferedWriter out = null;
 		try {
 			// below code do not throw any exception
+			in = Files.newBufferedReader(path1); // passing as an argument
+			out = Files.newBufferedWriter(path2);
 			int data = 25 / 5;
 			System.out.println(data);
 		}
@@ -22,13 +35,13 @@ public class Finally {
 		catch (NullPointerException e) {
 			System.out.println(e);
 		}
+		catch (IOException e){
+
+		}
 		// executed regardless of exception occurred or not
 		finally {
-				if(scanner != null) { // null check
 				scanner.close();
-				}
-			
-			System.out.println("finally block is always executed");
+				System.out.println("finally block is always executed");
 		}
 
 		System.out.println("rest of the code...");

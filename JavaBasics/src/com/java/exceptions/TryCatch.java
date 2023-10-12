@@ -21,9 +21,11 @@ public class TryCatch {
 //			System.out.println(a[10]);
 //		} catch (ArithmeticException e) {
 //			System.out.println("Arithmetic Exception occurs");
-//		} catch (ArrayIndexOutOfBoundsException e) {
+//		}
+//		catch (ArrayIndexOutOfBoundsException e) {
 //			System.out.println("ArrayIndexOutOfBounds Exception occurs");
-//		} catch (Exception e) {
+//		}
+//		catch (Exception e) {
 //			System.out.println("Parent Exception occurs");
 //		}
 //		System.out.println("rest of the code");
@@ -31,19 +33,22 @@ public class TryCatch {
 //	
 	public static void main(String[] args) {
 
-		try {
-			String s = null;
-			System.out.println(s.length());
-		} catch (ArithmeticException e) {
-			System.out.println("Arithmetic Exception occurs");
-		} catch (ArrayIndexOutOfBoundsException e) {
-			System.out.println("ArrayIndexOutOfBounds Exception occurs");
-		} catch(NullPointerException e) {
-			System.out.println("Null pointer");
-		}
-		catch (Exception e) {
-			System.out.println("Parent Exception occurs");
-		}
+		String s = null;
+		if(s!=null){
+			System.out.println(s.length());}
+//		try {
+//			String s = null;
+//			System.out.println(s.length());
+//		} catch (ArithmeticException e) {
+//			System.out.println("Arithmetic Exception occurs");
+//		} catch (ArrayIndexOutOfBoundsException e) {
+//			System.out.println("ArrayIndexOutOfBounds Exception occurs");
+//		} catch(NullPointerException e) {
+//			System.out.println("Null pointer");
+//		}
+//		catch (Exception e) {
+//			System.out.println("Parent Exception occurs");
+//		}
 		System.out.println("rest of the code");
 		//
 	}

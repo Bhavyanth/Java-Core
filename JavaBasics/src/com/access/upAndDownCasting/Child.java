@@ -1,4 +1,4 @@
-package com.java.access.upAndDownCasting;
+package com.access.upAndDownCasting;
 
 public class Child extends Parent{
 	void print() {

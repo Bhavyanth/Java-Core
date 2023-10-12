@@ -6,5 +6,6 @@ public class Rectangle extends Polygon{
 	public double calArea() {
 		return height * width;
 	}
-	
+
+
 }

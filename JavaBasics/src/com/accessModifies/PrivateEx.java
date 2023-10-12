@@ -1,6 +1,6 @@
-package com.java.accessModifies;
+package com.accessModifies;
 
-public class Private {
+public class PrivateEx {
 	private int data = 40;
 
 	public int getData() {

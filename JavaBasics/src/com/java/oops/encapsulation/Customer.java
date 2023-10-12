@@ -5,16 +5,13 @@ public class Customer {
 	private String name;
 	private int age;
 	private int custId;
-	
 	private String password;
 
-	// SHIFT + ALT + S -> to generate constructor or getters and setters
-	
-	public String getName() { // getter
+	public String getName() {
 		return name;
 	}
 
-	public void setName(String name) { // setter
+	public void setName(String name) {
 		this.name = name;
 	}
 
@@ -38,5 +35,7 @@ public class Customer {
 		return password;
 	}
 
-
+	public void setPassword(String password) {
+		this.password = password;
+	}
 }

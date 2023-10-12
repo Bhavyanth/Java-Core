@@ -18,7 +18,7 @@ public class ThreadPool {
 	static final int MAX_TH = 3;              
 	  
 	// main method  
-	public static void main(String argvs[])  
+	public static void main(String[] argvs)
 	{  
 	// Creating five new tasks  
 	Runnable rb1 = new Tasks("task 1");  
@@ -29,7 +29,7 @@ public class ThreadPool {
 	  
 	// creating a thread pool with MAX_TH number of  
 	// threads size the pool size is fixed  
-	ExecutorService pl = Executors.newFixedThreadPool(MAX_TH); 
+	ExecutorService pl = Executors.newFixedThreadPool(MAX_TH);
 	
 //	thread 1 -> task 1
 //	thread 2 -> task 2

@@ -1,8 +1,8 @@
-package com.java.accessModifies;
+package com.accessModifies;
 
+//import com.access.DefaultEx;
 
-
-public class MainDefault {
+public  class MainDefault {
 	
 	public static void main(String args[]) {
 		

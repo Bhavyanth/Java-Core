@@ -1,9 +1,6 @@
 package com.java.collections;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class Maps {
 	@SuppressWarnings("rawtypes")
@@ -14,42 +11,18 @@ public class Maps {
 		map.put(2, "Audi");
 		map.put(3, "Pagani");
 		map.put(4, "Lambo");
+		//for(map.Entry m:)
+//
+//		// Comparing By Key
+//		// returns a Set view of the mappings contained in this map
+		//map.entrySet().stream().sorted(Map.Entry.comparingByKey()).forEach(System.out::println);}}
+//     Sort in reverse order
 
-		// Classic way of iterating
-		Set set = map.entrySet();// Converting to Set so that we can traverse
-		Iterator itr = set.iterator();
-		while (itr.hasNext()) {
-			// Converting to Map.Entry to get key and value separately
-			Map.Entry entry = (Map.Entry) itr.next();
-			// System.out.println(entry.getKey() + " " + entry.getValue());
-		}
+		int c = 10;
+		System.out.println(c/0);
+		map.entrySet().stream().sorted(Map.Entry.comparingByKey(Comparator.reverseOrder())).forEach(System.out::println);
 
-		// New way of iterating
-		// Elements can traverse in any order
-		for (Map.Entry m : map.entrySet()) {
-			// System.out.println(m.getKey() + " " + m.getValue());
-		}
 
-		// Comparing By Key
+	}}
 
-		// returns a Set view of the mappings contained in this map
-		map.entrySet()
-				// returns a sequential Stream with this collection as its source
-				.stream()
-				// sorted according to the provided Comparator
-				.sorted(Map.Entry.comparingByKey()) // Can be compared in reverse order
-				// performs an action for each element of this stream
-				.forEach(System.out::println);
-		
-		// Comparing By Value
 
-				// returns a Set view of the mappings contained in this map
-				map.entrySet()
-						// returns a sequential Stream with this collection as its source
-						.stream()
-						// sorted according to the provided Comparator
-						.sorted(Map.Entry.comparingByValue()) // Can be compared in reverse order
-						// performs an action for each element of this stream
-						.forEach(System.out::println);
-	}
-}

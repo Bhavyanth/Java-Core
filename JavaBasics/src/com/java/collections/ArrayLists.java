@@ -1,20 +1,24 @@
 package com.java.collections;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class ArrayLists {
 	public static void main(String args[]) {
 		// CTRL + / -> to comment or uncomment
 		// CTRL + D -> To delete entire line
+
 		ArrayList<String> list = new ArrayList<String>();
+
 		list.add("BMW");
 		list.add("MERCEDES");
 		list.add("AUDI");
 		list.add("FERARRI");
-	//	System.out.println(list); // It will print list of objects
+
+		list.remove("BMW");
+
+
+
+//		System.out.println(list); // It will print list of objects
 		
 		// One way of printing the elements
 //		Iterator<String> iterator = list.iterator();
@@ -31,15 +35,15 @@ public class ArrayLists {
 //		System.out.println("Getting an element from array " + list.get(3));
 //
 //		// SET element in array
-		System.out.println("Setting element in array " + list.set(3, "BUGATTI"));
-		list.add(4, "PAGANI");
-		System.out.println("List " + list);
+//		System.out.println("Setting element in array " + list.set(3, "BUGATTI"));
+//		list.add(4, "PAGANI");
+//		System.out.println("List " + list);
 //
 //		// Sorting elements
-//		Collections.sort(list, Collections.reverseOrder());
-//		// To sort in reverse order
-//		//Collections.sort(list,Collections.reverseOrder());
-//		System.out.println(list);
+		Collections.sort(list, Collections.reverseOrder());
+		// To sort in reverse order
+//		Collections.sort(list,Collections.reverseOrder());
+		//System.out.println(list);
 //
 //		List<Integer> numList = new ArrayList<Integer>();
 //		numList.add(55);

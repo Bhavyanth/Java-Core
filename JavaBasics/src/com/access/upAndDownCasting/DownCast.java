@@ -1,4 +1,4 @@
-package com.java.access.upAndDownCasting;
+package com.access.upAndDownCasting;
 
 public class DownCast {
 	public static void main(String[] args) {

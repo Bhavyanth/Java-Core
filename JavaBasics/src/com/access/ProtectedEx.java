@@ -1,4 +1,4 @@
-package com.java.access;
+package com.access;
 
 public class ProtectedEx {
 	
